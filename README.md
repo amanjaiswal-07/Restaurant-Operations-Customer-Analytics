@@ -8,6 +8,7 @@
 * [Data Cleaning](#data-cleaning)
 * [Data Analysis](#data-analysis)
 * [Dashboard](#dashboard)
+* [Author](#author)
 
 ## Case Study
 An end-to-end analysis of restaurant operations and customer behavior in Mexico, using real consumer ratings collected in 2012. The project looks at how operational factors — location, parking, alcohol service, smoking policy, pricing, and franchise status — relate to customer satisfaction, and how customer demographics (age, occupation, budget, lifestyle habits) shape dining preferences. The goal is to surface insights that would help restaurant operators make decisions about amenities, service offerings, and target customer segments.
@@ -360,3 +361,11 @@ Insights are grouped into two lenses: **Operations** (restaurant-side factors li
 <p align="center">
   <img src="images/review.png" width="900">
 </p>
+
+## 👤 Author
+
+# Aman Jaiswal
+[![GitHub](https://img.shields.io/badge/GitHub-amanjaiswal--07-181717?style=for-the-badge&logo=github)](https://github.com/amanjaiswal-07)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aman%20Jaiswal-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/aman-jaiswal-aa31b51b5)
+
+---
