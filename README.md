@@ -3,6 +3,7 @@
 ## Table of Content
 * [Case Study](#case-study)
 * [Tools Used](#tools-used)
+* [Project Structure](#project-structure)
 * [Dataset Description](#dataset-description)
 * [ER Diagram](#er-diagram)
 * [Data Cleaning](#data-cleaning)
@@ -15,8 +16,51 @@ An end-to-end analysis of restaurant operations and customer behavior in Mexico,
 
 ## Tools Used
 - **Power BI** — interactive dashboard and DAX calculated fields for rating/age categorization
-- **SQL** — relational queries across consumers, restaurants, ratings, and cuisine tables ([`insights_queries.sql`](insights_queries.sql))
-- **Python (pandas)** — the same analysis reproduced two ways: via `sqlite3` + SQL ([`insights_analysis.py`](insights_analysis.py)) and via pure pandas transformations with no SQL ([`insights_analysis_pandas.py`](insights_analysis_pandas.py))
+- **SQL** — relational queries across consumers, restaurants, ratings, and cuisine tables ([`insights_queries.sql`](sql_analysis/insights_queries.sql))
+- **Python (pandas)** — the same analysis reproduced two ways: via `sqlite3` + SQL ([`insights_analysis.py`](python_analysis/insights_analysis.py)) and via pure pandas transformations with no SQL ([`insights_analysis_pandas.py`](python_analysis/insights_analysis_pandas.py))
+- **Jupyter Notebook** — exploratory data analysis and visualizations [`Restaurant_Operations_&_Customer_Analytics.ipynb`](python_analysis/Restaurant_Operations_%26_Customer_Analytics.ipynb)
+
+
+---
+
+## Project Structure
+
+```text
+Restaurant-Operations-Customer-Analytics/
+│
+├── dataset/                                # Raw restaurant dataset
+│   ├── consumer_preferences.csv            # Customer preferred cuisines
+│   ├── consumers.csv                       # Consumer demographic & lifestyle information
+│   ├── ratings.csv                         # Food, service and overall ratings
+│   ├── restaurant_cuisines.csv             # Cuisine served by each restaurant
+│   └── restaurants.csv                     # Restaurant details and operational attributes
+│
+├── images/                                 # Images used in README
+│   ├── behaviour.png                       # Customer Behaviour dashboard
+│   ├── dining.png                          # Dining dashboard
+│   ├── er_diag.png                         # Entity Relationship diagram
+│   ├── home.png                            # Dashboard Home page
+│   ├── hospitality.png                     # Hospitality dashboard
+│   └── review.png                          # Customer Review dashboard
+│
+├── PowerBI/
+│   ├── Restaurant Operations Customer Analytics.pbix
+│   │                                     # Editable Power BI dashboard
+│   └── Restaurant Operations Customer Analytics.pdf
+│                                         # Exported dashboard report
+│
+├── python_analysis/
+│   ├── insights_analysis.py              # Analysis using SQLite + SQL queries
+│   ├── insights_analysis_pandas.py       # Same analysis using only pandas
+│   └── Restaurant_Operations_&_Customer_Analytics.ipynb
+│                                         # Interactive notebook for exploration and visualization
+│
+├── sql_analysis/
+│   └── insights_queries.sql              # SQL queries used for business insights
+│
+└── README.md                             # Project documentation
+```
+--- 
 
 ## Dataset Description
 Our data set consists of the following observations which include:
