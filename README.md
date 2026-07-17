@@ -406,6 +406,7 @@ Insights are grouped into two lenses: **Operations** (restaurant-side factors li
   <img src="images/review.png" width="900">
 </p>
 
+<a id="author"></a>
 ## 👤 Author
 
 # Aman Jaiswal
